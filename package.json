@@ -5,7 +5,7 @@
   "scripts": {
     "development": "nodemon",
     "build": "webpack --mode=production --config webpack.config.server.js",
-    "start": "NODE_ENV=production node ./diolast/server.generated.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js",
     "test": "webpack --mode=production --progress --colors --config webpack-test.config.js && mocha --exit ./dist/testBundle.js"
   },
   "author": "Adeyemo Adeolu",
