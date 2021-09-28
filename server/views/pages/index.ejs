@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+   <table class="table table-border">
+       <tr><th>HTTP VERB</th><th>ENDPOINT</th><th>DESCRIPTION</th></tr>
+
+       <tr><td>GET</td> <td>api/traderequests/load</td> <td> Load all trade requests into database </td></tr>
+
+       <tr><td>GET</td> <td>api/traderequests?requestType=buy</td> <td> Get all buy requests </td></tr>
+
+       <tr><td>GET</td> <td>api/traderequests?requestType=sell</td> <td> Get all sell requests</td></tr>
+
+       <tr><td>GET</td> <td>api/traderequests?requestType=buy&page=1&limit=10</td> <td> Get all buy requests by pagination </td></tr>
+
+       <tr><td>GET</td> <td>api/traderequests?requestType=sell&page=1&limit=10</td> <td> Get all sell requests by pagination </td></tr>
+
+       <tr><td>POST</td> <td>api/buyrequests/</td> <td> Create a buy request </td></tr>
+
+       <tr><td>POST</td> <td>api/sellrequests/</td> <td> Create a sell request </td></tr>
+
+       <tr><td>PUT</td> <td>api/buyrequests/:buyRequestId</td> <td> Update a single buy request by Id</td></tr>
+
+       <tr><td>PUT</td> <td>api/sellrequests/:sellRequestId</td> <td> Update a single sell request by Id</td></tr>
+
+       <tr><td>DELETE</td> <td>api/buyrequests/:buyRequestId</td> <td> Delete a single buy request by Id</td></tr>
+
+       <tr><td>DELETE</td> <td>api/sellrequests/:sellRequestId</td> <td> Delete a single sell request by Id</td></tr>
+   </table>
+</main>
+
+
+</body>
+</html>
